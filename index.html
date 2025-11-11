@@ -117,21 +117,24 @@
         }
 
        .logo {
-    font-size: 32px;
-    font-weight: 900;
-    letter-spacing: -0.5px;
-    background: linear-gradient(135deg, #FFB3D9 0%, #FFB3D9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    cursor: pointer;              /* <-- TILFØJ DENNE LINJE */
-    transition: all 0.2s ease;    /* <-- TILFØJ DENNE LINJE */
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #FFB3D9 0%, #FFB3D9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    cursor: pointer;              
+    transition: all 0.2s ease;
+    position: relative;           /* NY LINJE */
+    z-index: 10;                  /* NY LINJE */
 }
 
-.logo:active {                     /* <-- TILFØJ HELE DENNE NYE BLOK */
-    transform: scale(0.95);
+.logo:active {                     
+    transform: scale(0.95);
 }
-        .owner-badge {
+       
+      .owner-badge {
             background: linear-gradient(135deg, #FFB3D9 0%, #FFB3D9 100%);
             padding: 6px 12px;
             border-radius: 20px;
